@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ModeToggle } from "@/components/ui/toggle-mode";
 
 export default function Navbar() {
   return (
@@ -10,7 +11,9 @@ export default function Navbar() {
               Shadcn_Next
             </Link>
           </li>
-          <li>Toggle Button</li>
+          <li>
+            <ModeToggle />
+          </li>
         </ul>
       </nav>
     </header>
