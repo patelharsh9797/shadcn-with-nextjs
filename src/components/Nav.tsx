@@ -3,7 +3,7 @@ import { ModeToggle } from "@/components/ui/toggle-mode";
 
 export default function Navbar() {
   return (
-    <header className="max-w-4xl mx-auto p-4">
+    <header className="max-w-4xl mx-auto px-4 py-8">
       <nav>
         <ul className={"flex justify-between gap-4"}>
           <li>
