@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ModeToggle } from "@/components/ui/toggle-mode";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function Navbar() {
   return (
@@ -11,7 +12,16 @@ export default function Navbar() {
               Shadcn_Next
             </Link>
           </li>
-          <li>
+          <li className="flex items-center gap-4">
+            <Link
+              href="/editor"
+              className={buttonVariants({
+                variant: "ghost",
+                size: "sm",
+              })}
+            >
+              Editor
+            </Link>
             <ModeToggle />
           </li>
         </ul>
